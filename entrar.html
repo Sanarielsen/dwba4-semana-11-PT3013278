@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
     <title>IFSP: Login</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
@@ -11,19 +12,23 @@
 
     <div id="menu"></div>
 
-    <img src='./src/Logo.jpg' id="imgTopo" alt="Imagem da Logo do IFSP" />
-
     <h1> Entrar </h1>
 
     <form>
 
-      <label for="txtUsuario"> Usuário </label>
-      <input type="text" name="txtUsuario" id="txtUsuario" value="" />
+      <div class="pnComponent">
+        <label for="txtUsuario"> Usuário </label>
+        <input type="text" name="txtUsuario" id="txtUsuario" value="" />
+      </div>
       <br> <br>
-      <label for="txtSenha"> Senha </label>
-      <input type="password" name="txtSenha" id="txtSenha" value="" />
+      <div class="pnComponent">
+        <label for="txtSenha"> Senha </label>
+        <input type="password" name="txtSenha" id="txtSenha" value="" />
+      </div>
       <br> <br>
-      <button type="submit"> Entrar </button> <a href="#"> Esqueci a senha </a>
+        <div class="pnComponent">
+        <button type="submit" id="btnEntrar" name="btnEntrar" > Entrar </button> <a href="#"> Esqueci a senha </a>
+      </div>
       
     </form>
 </body>

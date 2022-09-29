@@ -12,8 +12,6 @@
     
     <div id="menu"></div>
 
-    <img src='./src/Logo.jpg' id="imgTopo" alt="Imagem da Logo do IFSP" />
-
     <h1> Mande uma mensagem </h1>
 
     <form action="POST">
@@ -27,12 +25,12 @@
           <input type="email" id="txtEmail" name="txtEmail" value="" />
         </li>
         <li>
-          <label for="txtTelefone"> Telefone </label>
-          <input type="text" id="txtTelefone" name="txtTelefone" value="" />
+          <label for="txtCelular"> Telefone </label>
+          <input type="text" id="txtCelular" name="txtCelular" value="" />
         </li>
         <li>
           <label for="txtTelefone"> Assunto </label>
-          <select name="slcEvento">
+          <select name="slcEvento" style="width: 100%; height: 40px; border-radius: 5px;">
             <option value=""> --Selecione-- </option>
             <option value="1"> Reclamação </option>
             <option value="2"> Sugestão </option>          
@@ -40,10 +38,10 @@
         </li>
         <li>
           <label for="txaMensagem"> Mensagem </label>
-          <textarea> </textarea>
+          <textarea id="txaMensagem" name="txaMensagem" style="width: 100%; height: 40px; border-radius: 5px;"> </textarea>
         </li>
         <li>
-          <fieldset>
+          <fieldset name="fsLast">
             <legend> Opções de resposta </legend>
             <input type="checkbox" name="cbxEmail" id="cbxEmail" value="" /> Email
             <input type="checkbox" name="cbxTelefone" id="cbxTelefone" value="" /> Telefone
@@ -51,7 +49,7 @@
         </li>
         <li>
   
-          <button type="submit"> Enviar </button>
+          <button type="submit" id="btnEnviar" name="btnEnviar"> Enviar </button>
         </li>
       </ul>
     </form>

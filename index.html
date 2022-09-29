@@ -1,64 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <title> IFSP </title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <link href="slider.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <title> IFSP </title>
 </head>
+
 <body>
 
-    <div id="menu"></div>
+  <div id="menu"></div>
 
-    <a> <b> Cursos </b> </a>
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+  
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img src="./src/A.png" style="width:100%">
+      <div class="text text-black">Evento: Anote ai - IFSP</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="./src/B.jpg" style="width:100%">
+      <div class="text">Informe: IFSP no combate ao coronavirus</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="./src/C.jpg" style="width:100%">
+      <div class="text">Informe: Vestibular 2023</div>
+    </div>
 
-    <ul>  
-      <li> <a href="/curso_ads.html">Análise e Desenvolvimento de Sistemas</a> </li>
-      <li> <a href="/curso_egp.html">Engenharia de Produção</a> </li>
-      <li> <a href="/curso_gti.html">Gestão em Tecnologia da Informação</a> </li>
-      <li> <a href="/curso_letras.html">Letras</a> </li>
-      <li> <a href="/curso_gp.html">Gestão Pública</a></li>
-    </ul>
-    
-    <img src='./src/Logo.jpg' id="imgTopo" alt="Imagem da Logo do IFSP" />
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 4</div>
+        <h2 style="text-align:center;"><b>Conheça os desafios de inovação</b></h2>
+        <iframe style="display: flex; margin: 0 auto;" width="560" height="315"
+          src="https://www.youtube.com/embed/5g5LQe3m8Po" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      <div class="text">Video: Desafio de inovação</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
 
-    <p> <b>Eventos</b> </p>
+  <div class="pnEventMain">
+    <div class="pnEvent1 cfgCentralizar">
 
-    <img src='./src/SEJA_RARO.jpg' alt="Imagem promocional do evento" width="900" height="600" />
-    <br>
-    <span> Aniversário do IFSP - Pirituba - Palestra Augusto Aielo </span>
+      <figure class="figEvent">
+        <img class="imgInfo" src="./src/eleicoes.jpg" alt="" />
+        <figcaption>
+          <span> <b> Radar IFSP: informe-se sobre as eleições do dia 13 de outubro </b> </span>
+          <br>
+          <span> Todos os alunos e servidores podem votar; acesse aqui a cabine de votação online do seu câmpus </span>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="pnEvent2 cfgCentralizar">
 
-    <h2> Sobre a biblioteca </h2>
+      <figure class="figEvent">
+        <img class="imgInfo" src="./src/snct.jpg" alt="" />
+        <figcaption>
+          <span> <b> IFSP: SNCT reúne atividades entre 19 e 24 de outubro </b> </span>
+          <br>
+          <span> Programação reunirá iniciativas para aproximar pesquisadores e atividades culturais </span>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="pnEvent3 cfgCentralizar">
 
-    <figure> <img src='./src/library.jpeg' alt="Imagem promocional do evento" /> </figure>
+      <figure class="figEvent">
+        <img class="imgInfo" src="./src/residencia.png" alt="" />
+        <figcaption>
+          <span> <b> IFSP oferece bolsa aos voluntários da Residência Pedagógica </b> </span>
+          <br>
+          <span> Bolsa de R$ 400,00 será paga pelo período de três meses </span>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="pnEvent4 cfgCentralizar">
 
-    <h2> Conheça os novos títulos disponíveis na nossa biblioteca </h2>
-    <span>Publicado: Quarta-feira, 14 de agosto de 2019</span>
+      <figure class="figEvent">
+        <img class="imgInfo" src="./src/maratona.jpeg" alt="" />
+        <figcaption>
+          <span> <b> Inscrições abertas para a III Maratona InterIF </b> </span>
+          <br>
+          <span> Maratona de programação do IFSP será realizada online, no dia 31 de outubro; inscrições até 26 de outubro </span>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
 
-    <h2>Conheça o SUAP</h2>
+  <br><br><br>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/yVbOcB1ryh0" title="Tutorial de Acesso  - SUAP 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <a href="#imgTopo"> <img src='./src/MoveTop.png' alt="Imagem promocional do evento" width="40" height="40" /> </a>
 
-    <br><br><br>
-
-    <a href="#imgTopo"> <img src='./src/MoveTop.png' alt="Imagem promocional do evento" width="40" height="40" /> </a>
-    
 </body>
 
-<footer>
+<footer>  
+  <script src="./scripts/slider.js" defer async charset="utf-8"></script>
+  <object width="100%" height="180px" data="footer.html"></object>
 
-    <object width="100%" height="180px" data="footer.html"></object>
-  
-    <script>
-        $(document).ready(function(){
-            $.get( "header.html", function( data ) {
-              $( "#menu" ).html( data );
-            });
-        });
-    </script>
+  <script>
+    $(document).ready(function () {
+      $.get("header.html", function (data) {
+        $("#menu").html(data);
+      });
+    });
+  </script>
 
- 
+
 </footer>
+
 </html>
