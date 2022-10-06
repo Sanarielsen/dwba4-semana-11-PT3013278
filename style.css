@@ -129,6 +129,40 @@
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #F33131;}
 
+.logoLogin {
+
+  max-width: 140px;
+  max-height: 140px;
+}
+
+.txtUsuario {
+
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-bottom: -1px;
+}
+
+.form-control {
+
+  box-sizing: border-box !important;
+  font-size: 16px !important;
+  height: auto !important;
+  padding: 10px !important;
+  position: relative !important;
+}
+
+.form-control:focus {
+
+  z-index: 2;
+}
+
+.txtSenha {
+
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin-bottom: 10px;
+}
+
 #txtEmail {
 
   width: 100%;

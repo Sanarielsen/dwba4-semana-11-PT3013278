@@ -7,30 +7,46 @@
     <link href="style.css" rel="stylesheet">
     <title>IFSP: Login</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 
     <div id="menu"></div>
 
-    <h1> Entrar </h1>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6 col-lg-4">          
+          <form action="">
+            <div class="form-group text-center">
+              <img class="logoLogin pb-3" src="./src/ifsp.png" alt= "Logo do IFSP"/>
+              <p class="h3 text-center"> Faça login </p>
+            </div>
+            <div class="form-group">
+              <input type="email" name="txtUsuario" id="txtUsuario" class="form-control" placeholder="Seu e-mail">
+              <input type="password" name="txtSenha" id="txtSenha" class="form-control" placeholder="Sua senha">
+            </div>
+            <div class="form-group form-check text-center">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox"> Lembrar de mim
+              </label>
+            </div>
+            <div class="form-group text-center">
 
-    <form>
+              <a href="#"> Esqueci a senha </a>
+              <input class="btn btn-primary btn-lg w-100" type="submit" value="Entrar">
+            </div>
 
-      <div class="pnComponent">
-        <label for="txtUsuario"> Usuário </label>
-        <input type="text" name="txtUsuario" id="txtUsuario" value="" />
+            <div class="form-group text-center py-3">
+
+              <span class="text-muted"> @ 2020 </span>
+            </div>
+          </form>
+        </div>
       </div>
-      <br> <br>
-      <div class="pnComponent">
-        <label for="txtSenha"> Senha </label>
-        <input type="password" name="txtSenha" id="txtSenha" value="" />
-      </div>
-      <br> <br>
-        <div class="pnComponent">
-        <button type="submit" id="btnEntrar" name="btnEntrar" > Entrar </button> <a href="#"> Esqueci a senha </a>
-      </div>
-      
-    </form>
+    </div>
 </body>
 <footer>
   
